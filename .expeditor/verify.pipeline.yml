@@ -8,52 +8,52 @@ expeditor:
         automatic:
           limit: 1
 steps:
-  - label: chefstyle-tests-ruby-3.1
-    command:
-      - .expeditor/run_linux_tests.sh rake style
-    expeditor:
-      executor:
-        docker:
-          image: ruby:3.1-bullseye
-          environment:
-            - GITHUB_TOKEN
-  # This tests that our verify.rb script (and dependencies) can successfully test components included in CW
-  - label: component-test-tests-ruby-3.1
-    command:
-      - .expeditor/run_linux_tests.sh rspec omnibus/verification
-    expeditor:
-      executor:
-        docker:
-          image: ruby:3.1-bullseye
-          environment:
-            - GITHUB_TOKEN
-  - label: ":linux: :darwin: :windows: top-level chef cmd"
-    commands:
-      - cd components/main-chef-wrapper
-      - hab studio run "source .studiorc && build_cross_platform && unit_tests && integration_tests"
-    timeout_in_minutes: 10
-    retry:
-      automatic:
-        limit: 1
-    expeditor:
-      executor:
-        docker:
-          privileged: true
-          environment:
-            - HAB_STUDIO_SUP=false
-            - HAB_NONINTERACTIVE=true
-  - label: ":linux: :darwin: :windows: rollout client chef-automate-collect"
-    commands:
-      - cd components/chef-automate-collect
-      - hab studio run "source .studiorc && build_cross_platform && integration_tests"
-    timeout_in_minutes: 10
-    retry:
-      automatic:
-        limit: 1
-    expeditor:
-      executor:
-        docker:
-          privileged: true
-          environment:
-            - HAB_STUDIO_SUP=false
-            - HAB_NONINTERACTIVE=true
+- label: chefstyle-tests-ruby-3.1
+  command:
+    - .expeditor/run_linux_tests.sh rake style
+  expeditor:
+    executor:
+      docker:
+        image: ruby:3.1-bullseye
+        environment:
+          - GITHUB_TOKEN
+# This tests that our verify.rb script (and dependencies) can successfully test components included in CW
+- label: component-test-tests-ruby-3.1
+  command:
+    - .expeditor/run_linux_tests.sh rspec omnibus/verification
+  expeditor:
+    executor:
+      docker:
+        image: ruby:3.1-bullseye
+        environment:
+          - GITHUB_TOKEN
+- label: ":linux: :darwin: :windows: top-level chef cmd"
+  commands:
+    - cd components/main-chef-wrapper
+    - hab studio run "source .studiorc && build_cross_platform && unit_tests && integration_tests"
+  timeout_in_minutes: 10
+  retry:
+    automatic:
+      limit: 1
+  expeditor:
+    executor:
+      docker:
+        privileged: true
+        environment:
+          - HAB_STUDIO_SUP=false
+          - HAB_NONINTERACTIVE=true
+- label: ":linux: :darwin: :windows: rollout client chef-automate-collect"
+  commands:
+    - cd components/chef-automate-collect
+    - hab studio run "source .studiorc && build_cross_platform && integration_tests"
+  timeout_in_minutes: 10
+  retry:
+    automatic:
+      limit: 1
+  expeditor:
+    executor:
+      docker:
+        privileged: true
+        environment:
+          - HAB_STUDIO_SUP=false
+          - HAB_NONINTERACTIVE=true
