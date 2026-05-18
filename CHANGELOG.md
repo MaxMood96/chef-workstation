@@ -1,15 +1,16 @@
 <!-- usage documentation: https://expeditor.chef.io/docs/reference/changelog/ -->
-<!-- latest_release 25.14.1 -->
-## [25.14.1](https://github.com/chef/chef-workstation/tree/25.14.1) (2026-05-11)
+<!-- latest_release 25.14.2 -->
+## [25.14.2](https://github.com/chef/chef-workstation/tree/25.14.2) (2026-05-18)
 
 #### Merged Pull Requests
-- Removed the github token setting on expeditor config [#3553](https://github.com/chef/chef-workstation/pull/3553) ([ashiqueps](https://github.com/ashiqueps))
+- Updated NOTICE for 25.14 release [#3556](https://github.com/chef/chef-workstation/pull/3556) ([nikhil2611](https://github.com/nikhil2611))
 <!-- latest_release -->
 
 <!-- release_rollup since=25.13.7 -->
 ### Changes not yet released to stable
 
 #### Merged Pull Requests
+- Updated NOTICE for 25.14 release [#3556](https://github.com/chef/chef-workstation/pull/3556) ([nikhil2611](https://github.com/nikhil2611)) <!-- 25.14.2 -->
 - Removed the github token setting on expeditor config [#3553](https://github.com/chef/chef-workstation/pull/3553) ([ashiqueps](https://github.com/ashiqueps)) <!-- 25.14.1 -->
 - Remove the omnibus folder to git sub module [#3550](https://github.com/chef/chef-workstation/pull/3550) ([sanghinitin](https://github.com/sanghinitin)) <!-- 25.14.0 -->
 - Deps updates [#3543](https://github.com/chef/chef-workstation/pull/3543) ([nikhil2611](https://github.com/nikhil2611)) <!-- 25.13.9 -->
