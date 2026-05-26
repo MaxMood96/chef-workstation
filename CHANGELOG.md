@@ -1,23 +1,21 @@
 <!-- usage documentation: https://expeditor.chef.io/docs/reference/changelog/ -->
-<!-- latest_release 25.14.2 -->
-## [25.14.2](https://github.com/chef/chef-workstation/tree/25.14.2) (2026-05-18)
-
-#### Merged Pull Requests
-- Updated NOTICE for 25.14 release [#3556](https://github.com/chef/chef-workstation/pull/3556) ([nikhil2611](https://github.com/nikhil2611))
+<!-- latest_release -->
 <!-- latest_release -->
 
-<!-- release_rollup since=25.13.7 -->
-### Changes not yet released to stable
-
-#### Merged Pull Requests
-- Updated NOTICE for 25.14 release [#3556](https://github.com/chef/chef-workstation/pull/3556) ([nikhil2611](https://github.com/nikhil2611)) <!-- 25.14.2 -->
-- Removed the github token setting on expeditor config [#3553](https://github.com/chef/chef-workstation/pull/3553) ([ashiqueps](https://github.com/ashiqueps)) <!-- 25.14.1 -->
-- Remove the omnibus folder to git sub module [#3550](https://github.com/chef/chef-workstation/pull/3550) ([sanghinitin](https://github.com/sanghinitin)) <!-- 25.14.0 -->
-- Deps updates [#3543](https://github.com/chef/chef-workstation/pull/3543) ([nikhil2611](https://github.com/nikhil2611)) <!-- 25.13.9 -->
-- Remove docs content from chef-workstation [#3536](https://github.com/chef/chef-workstation/pull/3536) ([IanMadd](https://github.com/IanMadd)) <!-- 25.13.8 -->
+<!-- release_rollup -->
 <!-- release_rollup -->
 
 <!-- latest_stable_release -->
+## [25.14.2](https://github.com/chef/chef-workstation/tree/25.14.2) (2026-05-26)
+
+#### Merged Pull Requests
+- Remove docs content from chef-workstation [#3536](https://github.com/chef/chef-workstation/pull/3536) ([IanMadd](https://github.com/IanMadd))
+- Deps updates [#3543](https://github.com/chef/chef-workstation/pull/3543) ([nikhil2611](https://github.com/nikhil2611))
+- Remove the omnibus folder to git sub module [#3550](https://github.com/chef/chef-workstation/pull/3550) ([sanghinitin](https://github.com/sanghinitin))
+- Removed the github token setting on expeditor config [#3553](https://github.com/chef/chef-workstation/pull/3553) ([ashiqueps](https://github.com/ashiqueps))
+- Updated NOTICE for 25.14 release [#3556](https://github.com/chef/chef-workstation/pull/3556) ([nikhil2611](https://github.com/nikhil2611))
+<!-- latest_stable_release -->
+
 ## [25.13.7](https://github.com/chef/chef-workstation/tree/25.13.7) (2026-03-05)
 
 #### Merged Pull Requests
@@ -36,7 +34,6 @@
 - Fix Windows build failure for git-sourced gems [#3524](https://github.com/chef/chef-workstation/pull/3524) ([nikhil2611](https://github.com/nikhil2611))
 - Updates notice file [#3525](https://github.com/chef/chef-workstation/pull/3525) ([Vasu1105](https://github.com/Vasu1105))
 - Fix Windows build for git-sourced gems [#3526](https://github.com/chef/chef-workstation/pull/3526) ([nikhil2611](https://github.com/nikhil2611))
-<!-- latest_stable_release -->
 
 ## [25.12.1102](https://github.com/chef/chef-workstation/tree/25.12.1102) (2025-12-15)
 
